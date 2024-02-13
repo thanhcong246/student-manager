@@ -108,19 +108,13 @@ public class StudentService {
         }
     }
 
-    public String deleteStudent(StudentEntity studentRemove) {
+    public String deleteStudent(Long id) {
         try {
-            if (studentRepository.existsByNameAndPhoneAndEmailAndAgeAndSexAndAddress(
-                    studentRemove.getName(),
-                    studentRemove.getPhone(),
-                    studentRemove.getEmail(),
-                    studentRemove.getAge(),
-                    studentRemove.getSex(),
-                    studentRemove.getAddress())) {
-                studentRepository.delete(studentRemove);
-                return "Student remove successfully";
+            if (studentRepository.existsById(id)) {
+                studentRepository.deleteById(id);
+                return "Student removed successfully";
             } else {
-                return "This student does not exists";
+                return "Student does not exist";
             }
         } catch (Exception e) {
             throw e;

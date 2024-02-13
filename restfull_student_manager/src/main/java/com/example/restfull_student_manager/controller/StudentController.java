@@ -34,13 +34,14 @@ public class StudentController {
         return studentService.addStudent(studentAdd);
     }
 
-    @PutMapping("updateStudent")
-    public String updateStudent(@RequestBody StudentEntity studentUpdate) {
+    @PutMapping("updateStudent/{id}")
+    public String updateStudent(@PathVariable Long id, @RequestBody StudentEntity studentUpdate) {
+        studentUpdate.setId(id);
         return studentService.updateStudent(studentUpdate);
     }
 
-    @DeleteMapping("removeStudent")
-    public String deleteStudent(@RequestBody StudentEntity studentRemove) {
-        return studentService.deleteStudent(studentRemove);
+    @DeleteMapping("/removeStudent/{id}")
+    public String deleteStudent(@PathVariable Long id) {
+        return studentService.deleteStudent(id);
     }
 }
