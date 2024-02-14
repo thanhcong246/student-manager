@@ -6,8 +6,8 @@ Restful API Student Manager
 - app_student_manager : app (fluter)
   + cac thu vien ben trong : http: ^1.2.0
 - lenh test trong post man
-  + detail Stuent : http://127.0.0.1:9090/student/1
-  + get all studet : http://127.0.0.1:9090/students
+  + detail student : http://127.0.0.1:9090/student/1
+  + get all student : http://127.0.0.1:9090/students
   + add student : http://127.0.0.1:9090/addStudent
   + update student : http://127.0.0.1:9090/updateStudent
   + remove student : http://127.0.0.1:9090/removeStudent
