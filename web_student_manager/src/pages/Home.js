@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
-import { Button } from 'bootstrap';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Home() {
     const [students, setStudents] = useState([]);
+    const location = useLocation();
 
     useEffect(() => {
-        loadStudent();
-    }, []);
+        if (location.state && location.state.searchResult) {
+            setStudents(location.state.searchResult);
+        } else {
+            loadStudent();
+        }
+    }, [location]);
 
     const loadStudent = async () => {
         const result = await axios.get("http://127.0.0.1:9090/students");
