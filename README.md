@@ -10,7 +10,7 @@ Restful API Student Manager
   + detail student : http://127.0.0.1:9090/student/1
   + get all student : http://127.0.0.1:9090/students
   + add student : http://127.0.0.1:9090/addStudent
-  + update student : http://127.0.0.1:9090/updateStudent
-  + remove student : http://127.0.0.1:9090/removeStudent
+  + update student : http://127.0.0.1:9090/updateStudent/1
+  + remove student : http://127.0.0.1:9090/removeStudent/1
   + search student : http://127.0.0.1:9090/searchStudent?keyword=cong
 - Các link Api trên trong App không hỗ trợ hãy thay thế địa chỉ trên thành địa chỉ Ip wifi đang sử dụng
