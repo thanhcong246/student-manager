@@ -2,10 +2,13 @@ Restful API Student Manager
 
 - resfull_student_manager: backend (spring boot)
   + Các thư viện hỗ trợ : Spring Web, Spring Data JPA, MySQL Driver
+  + Công cụ: Interllij
 - web_student_manager : frontend (reactjs)
   + Các thư viện hỗ trợ : npm i bootstrap, npm install react-router-dom, npm install axios
+  + Công cụ: vscode
 - app_student_manager : app (fluter)
   + Các thư viện hỗ trợ : http: ^1.2.0
+  + Công cụ: Androdi studio
 - Lệnh test trong postman
   + detail student : http://127.0.0.1:9090/student/1
   + get all student : http://127.0.0.1:9090/students
