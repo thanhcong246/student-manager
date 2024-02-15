@@ -1,6 +1,7 @@
 Restful API Student Manager
 
 - resfull_student_manager: backend (spring boot)
+  + Các thư viện hỗ trợ : Spring Web, Spring Data JPA, MySQL Driver
 - web_student_manager : frontend (reactjs)
   + Các thư viện hỗ trợ : npm i bootstrap, npm install react-router-dom, npm install axios
 - app_student_manager : app (fluter)
