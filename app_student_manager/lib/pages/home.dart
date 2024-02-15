@@ -24,7 +24,7 @@ class homeStudentState extends State<Home> {
 
   Future<void> _getAllStudents() async {
     final response =
-        await http.get(Uri.parse('http://192.168.1.7:9090/students'));
+        await http.get(Uri.parse('http://192.168.1.9:9090/students'));
     if (response.statusCode == 200) {
       List<dynamic> data = jsonDecode(utf8.decode(response.bodyBytes));
       setState(() {

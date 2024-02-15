@@ -30,7 +30,6 @@ class Student {
       required this.age,
       required this.address});
 
-
   factory Student.fromJson(Map<String, dynamic> json) => Student(
       id: Long(json["id"]),
       name: json["name"],
@@ -49,4 +48,16 @@ class Student {
         "age": age,
         "address": address
       };
+
+  String get nameS => name;
+
+  String get phoneS => phone;
+
+  String get emailS => email;
+
+  String get sexS => sex;
+
+  int get ageS => age;
+
+  String get addressS => address;
 }
