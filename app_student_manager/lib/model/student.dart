@@ -40,7 +40,7 @@ class Student {
       address: json["address"]);
 
   Map<String, dynamic> toJson() => {
-        "id": id,
+        "id": id.value,
         "name": name,
         "phone": phone,
         "email": email,
